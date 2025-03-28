@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+header {
+    background-color: #FFF8DE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.logo {
+    width: 150px;
+    margin-left: 20px;
+}
+
+/* Menú de navegación */
+.contenedor22 {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.bmenu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bmenu a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.bmenu a:hover {
+    color: #f7b2d9;
+}
+
+/* Botón tienda */
+.tienda {
+    background-color: #c89de6;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-left: 150px;
+}
+
+.tienda:hover {
+    background-color: #a87bc7;
+}
+
+/* Imagen principal */
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+/* Sección Comunidad */
+.seccion-comunidad {
+    background-color: #B276C2;
+    color: black;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* Grid principal */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.item {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.item5 {
+    grid-column: span 2;
+}
+
+.item6 {
+    grid-row: span 2;
+}
+
+/* Última imagen grande */
+.item11 {
+    grid-column: span 3;
+}
+
+
+/* Botón "Ver Más" */
+.seccion-ver {
+    background-color: #B276C2;
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 40px;
+    width: 250px;
+    margin: 30px auto;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+.boton-ver {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    justify-content: end;
+}
+
+.boton-ver:hover {
+    background-color: #a87bc7; /* Cambio de color al pasar el mouse */
+}
+
+
+/* Footer */
+.footer {
+    background-color: #FFF7E5;
+    padding: 40px 60px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .contenedor22 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bmenu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .item5,
+    .item6 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .item11 {
+        grid-column: span 2;
+    }
+
+    .seccion-comunidad {
+        font-size: 60px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+/* Smartphones */
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .contenedor22 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bmenu {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .bmenu a {
+        font-size: 16px;
+    }
+
+    .tienda {
+        margin-left: 0;
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .item5,
+    .item6,
+    .item11 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .seccion-comunidad {
+        font-size: 40px;
+        padding: 10px;
+        width: 95%;
+    }
+
+    .seccion-ver {
+        font-size: 20px;
+        padding: 10px;
+        width: 200px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}

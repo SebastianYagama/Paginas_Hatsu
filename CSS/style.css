@@ -1,0 +1,1549 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --header-height: 3rem;
+  --hue-color: 920;
+ 
+  --body-color: #fff8de;
+  --product-bg-color: #9BDD83;
+  --font-color: #000;
+
+
+  --body-font: 'Oswald', sans-serif;
+
+  --big-font-size: 3rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: 1rem;
+  --smaller-font-size: .75rem;
+
+  --font-small: 200;
+  --font-medium: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  --mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+span{
+  margin: 0 1rem;
+}
+
+.grid_hatsu1 {
+  display: grid;
+}
+
+.header_hatsu1 {
+  width: 100%;
+  height: var(--header-height);
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+  padding: 0 5rem;
+}
+
+.nav_hatsu1 {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list_hatsu1 {
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4rem;
+}
+
+.nav__link_hatsu1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  color: var(--font-color);
+}
+
+.shop-button_hatsu1 {
+  background-color: #c89de6;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.main_hatsu_1 {
+  margin-top: 5.75rem;
+}
+.main__hero_hatsu1 {
+  padding: 0 5rem;
+}
+
+.hero__title-container_hatsu1 {
+  width: 100%;
+}
+
+.hero-icon_hatsu1 {
+  border-radius: 50%;
+  background: #000;
+  padding: .35rem;
+  font-size: 2rem;
+  color: var(--body-color);
+}
+
+.hero__title_hatsu1 {
+  font-size: 9.5rem;
+  width: 100%;
+  display: block;
+  font-weight: var(--font-bold);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.main__option_hatsu1 {
+  padding: 0 5rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.option__text_hatsu1 {
+  font-size: 2.5rem;
+  font-weight: var(--font-medium);
+}
+
+.container__image_hatsu1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--mb-1-5);
+  margin-bottom: var(--mb-2-5);
+}
+
+.container__image_hatsu1 img {
+  object-fit: cover;
+  padding: 0 5rem;
+}
+
+.container_hatsu1 {
+  margin: 5rem 0;
+}
+
+.products__title_hatsu1 {
+  padding: 1.5rem 5rem;
+  background: var(--product-bg-color);
+  font-weight: var(--font-small);
+}
+
+.products_text_title_hatsu1 {
+  font-size: var(--big-font-size);
+  color: var(--body-color);
+}
+
+.item_hatsu1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products_hatsu1 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.category_hatsu1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-color_hatsu1 {
+  color: var(--product-bg-color);
+}
+
+.secondary-color_hatsu1 {
+  background: var(--product-bg-color);
+  color: var(--body-color);
+}
+
+.product_text_hatsu1 {
+  text-align: center;
+}
+
+.text_category_hatsu1 {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  font-size: 2rem;
+  margin-top: 50%;
+}
+
+.product_image_hatsu1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product_item_hatsu1 {
+  padding: 4rem 0;
+}
+
+.product-icon_hatsu1 {
+  border-radius: 50%;
+  font-size: 2.5rem;
+  color: var(--body-color);
+  background: var(--product-bg-color);
+  padding: .25rem;
+}
+
+.footer_hatsu1 {
+  grid-template-columns: 1.75fr 1fr 1fr;
+  padding: 0 2rem;
+}
+
+.footer__title_hatsu1 {
+  font-size: var(--h1-font-size);
+}
+
+.footer__email_hatsu1 {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  width: 300px;
+}
+
+.form_hatsu1 {
+  width: 300px;
+  margin-top: var(--mb-0-75);
+  padding: 10px;
+  font-size: var(--font-medium);
+  border: none;
+  border-bottom: 2px solid #888;
+  background: transparent;
+  outline: none;
+}
+
+.button_hatsu1 {
+  padding: .75rem;
+  border-radius: 5%;
+  background: #EC96AD;
+  width: 120px;
+  border: none;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --big-font-size: 2.5rem;
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.125rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .875rem;
+    --small-font-size: .875rem;
+  }
+
+  .header_hatsu1 {
+    padding: 0 3rem;
+  }
+  
+  .grid_hatsu1 {
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .category_hatsu1 {
+    flex-direction: row-reverse;
+    justify-content: start;
+    padding: 0 2rem;
+    margin-top: 2rem;
+    grid-column: span 2;
+  }
+
+  .nav__list_hatsu1 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+
+  .main__hero_hatsu1,
+  .main__option_hatsu1,
+  .container__image_hatsu1 {
+    padding: 0 3rem;
+  }
+
+  .hero__title_hatsu1 {
+    margin-top: 3rem;
+    font-size: 5.5rem;
+  }
+
+  .products_hatsu1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .text_category_hatsu1 {
+    transform: rotate(0);
+    font-size: 1.75rem;
+    margin-top: 0;
+  }
+
+  .footer_hatsu1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  :root {
+    --big-font-size: 2.5rem;
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.125rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .875rem;
+    --small-font-size: .875rem;
+  }
+
+  .header_hatsu1 {
+    padding: 0 3rem;
+  }
+  
+  .grid_hatsu1 {
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .category_hatsu1 {
+    flex-direction: row-reverse;
+    justify-content: start;
+    padding: 0 2rem;
+    margin-top: 2rem;
+    grid-column: span 2;
+  }
+
+  .nav__list_hatsu1 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+
+  .main__hero_hatsu1,
+  .main__option_hatsu1,
+  .container__image_hatsu1 {
+    padding: 0 3rem;
+  }
+
+  .hero__title_hatsu1 {
+    margin-top: 3rem;
+    font-size: 5.5rem;
+  }
+
+  .products_hatsu1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .text_category_hatsu1 {
+    transform: rotate(0);
+    font-size: 1.75rem;
+    margin-top: 0;
+  }
+
+  .footer_hatsu1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+}
+
+/* ======== MÓVILES (hasta 480px) ======== */
+@media screen and (max-width: 480px) {
+  .header_hatsu1 {
+    padding: 1rem 2rem;
+  }
+
+  .nav_hatsu1 {
+    display: none;
+  }
+
+  .category_hatsu1 {
+    flex-direction: row-reverse;
+    justify-content: start;
+    padding: 0 2rem;
+    margin-top: 2rem;
+    grid-column: span 2;
+  }
+  
+  .text_category_hatsu1 {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .grid_hatsu1 {
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+
+  .nav__list_hatsu1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .main_hatsu1 {
+    margin-top: 3rem;
+  }
+
+  .main__hero_hatsu1,
+  .main__option_hatsu1,
+  .container__image_hatsu1 {
+    padding: 0 1.5rem;
+  }
+
+  .hero__title_hatsu1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .text_category_hatsu1 {
+    transform: rotate(0);
+  }
+  
+  .products_hatsu1 {
+    gap: 1rem;
+  }
+
+  .product_item_hatsu1 {
+    padding: 2rem 0;
+  }
+
+  .footer__email_hatsu1 {
+    justify-content: center;
+  }
+
+  .footer_hatsu1 {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+    padding: 1rem;
+  }
+}
+
+
+
+header {
+    background-color: #FFF8DE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.logo {
+    width: 150px;
+    margin-left: 20px;
+}
+
+/* Menú de navegación */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.bmenu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bmenu a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.bmenu a:hover {
+    color: #f7b2d9;
+}
+
+/* Botón tienda */
+.tienda {
+    background-color: #c89de6;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-left: 150px;
+}
+
+.tienda:hover {
+    background-color: #a87bc7;
+}
+
+/* Imagen principal */
+.banner_hatsu3 img {
+    width: 100%;
+    display: block;
+}
+
+/* Sección Comunidad */
+.seccion-comunidad_hatsu3 {
+    background-color: #B276C2;
+    color: black;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* Grid principal */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.item_hatsu3 {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item_hatsu3 img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.item5_hatsu3 {
+    grid-column: span 2;
+}
+
+.item6_hatsu3 {
+    grid-row: span 2;
+}
+
+/* Última imagen grande */
+.item11_hatsu3 {
+    grid-column: span 3;
+}
+
+
+/* Botón "Ver Más" */
+.seccion-ver_hatsu3 {
+    background-color: #B276C2;
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 40px;
+    width: 250px;
+    margin: 30px auto;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+.boton-ver_hatsu3 {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    justify-content: end;
+}
+
+.boton-ver_hatsu3:hover {
+    background-color: #a87bc7; /* Cambio de color al pasar el mouse */
+}
+
+
+/* ____________________________Parte footer_______________________________*/
+
+.footer-container {
+    background-color: #FFF7E5; /* Color de fondo */
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 30px; /* Espacio entre elementos */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+/* Estilo de la suscripción */
+.footer-subscribe{
+    grid-column: span 2; /* Ocupa 2 columnas */
+}
+
+.footer-subscribe h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #6F5A59;
+}
+
+.subscribe-form input {
+    border: none;
+    border-bottom: 2px solid #a5a5a5;
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    color: #6F5A59;
+}
+
+.subscribe-form button {
+    background-color: #E8A9A9;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.subscribe-form button:hover {
+    background-color: #d89090;
+}
+
+
+/* Estilos para las secciones de ayuda y legal */
+.footer-help h3,
+.footer-legal h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-help p,
+.footer-legal p {
+    font-size: 20px;
+    margin: 5px 0;
+    line-height: 1.1; /* Ajusta el espaciado vertical */
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bmenu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .item5_hatsu3,
+    .item6_hatsu3 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .item11_hatsu3 {
+        grid-column: span 2;
+    }
+
+    .seccion-comunidad_hatsu3 {
+        font-size: 60px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+/* Smartphones */
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 100px;
+        align-items: left;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bmenu {
+        display: none; /* Oculto en móviles */
+    }
+
+
+    .tienda {
+        margin-left: 0;
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .item5_hatsu3,
+    .item6_hatsu3,
+    .item11_hatsu3 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .seccion-comunidad_hatsu3 {
+        font-size: 40px;
+        padding: 10px;
+        width: 95%;
+    }
+
+    .seccion-ver_hatsu3 {
+        font-size: 20px;
+        padding: 10px;
+        width: 200px;
+    }
+
+
+
+    /* ____________________________Parte footer_______________________________*/
+
+    .footer-container {
+        background-color: #FFF7E5; /* Color de fondo */
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 4 columnas */
+        gap: 10px; /* Espacio entre elementos */
+        margin: 0 auto; /* Centra horizontalmente */
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+
+
+    .footer-subscribe h2 {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .subscribe-form {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #6F5A59;
+    }
+
+    .subscribe-form input {
+        border: none;
+        border-bottom: 2px solid #a5a5a5;
+        padding: 8px;
+        font-size: 8px;
+        outline: none;
+        background: transparent;
+        color: #6F5A59;
+    }
+
+    .subscribe-form button {
+        background-color: #E8A9A9;
+        color: black;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 7px;
+    }
+
+    .subscribe-form button:hover {
+        background-color: #d89090;
+    }
+
+
+    /* Estilos para las secciones de ayuda y legal */
+    .footer-help h3,
+    .footer-legal h3 {
+        font-size: 10px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .footer-help p,
+    .footer-legal p {
+        font-size: 10px;
+        margin: 5px 0;
+        line-height: 1.1; /* Ajusta el espaciado vertical */
+    }
+}
+
+
+
+/*-------------------------------------------------------------------------------------Hatsu_2--------------------------------------------------------------------------*/
+
+/* ____________________________Parte rosa 1____________________________*/
+
+
+.contacto_hatsu2 {
+    margin: auto;
+    color: #FFF7E4;
+    background-color: #FC95A8;
+}
+
+.h1_hatsu2 {
+    font-size: 150px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 30px;
+    width: 1100px;
+    margin: 10px auto; /* Centrar en la página */
+}
+
+.linea_blanca_hatsu2{
+    background-color: #fff;
+    width: 100vw;  /* Ocupa todo el ancho de la pantalla */
+    height: 2px;  /* Altura fija de 400px (puedes cambiarla) */
+}
+
+
+.contenido_hatsu2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 30px; /* Espacio entre elementos */
+    width: 70%;
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 30px 30px;
+}
+
+.texto_hatsu2 {
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: right;
+}
+
+.redes_hatsu2 {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.redes_hatsu2 img {
+    width: 60px;
+    margin: 0 10px;
+}
+
+.imagen_hatsu2 {
+    margin-top: 20px;
+}
+
+.imagen_hatsu2 img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+
+/* ____________________________Parte violeta 1_______________________________*/
+
+.contenedor_hatsu2 {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #BD86D7; /* Color de fondo lila */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 30px; /* Espacio entre elementos */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 30px 30px;
+}
+
+/* Estilos del texto */
+.texto_hatsu2 {
+    color: #FFF7E4;
+    text-align: left;
+    grid-row: span 2; /* Hace que ocupe 2 filas */
+}
+
+.texto_hatsu2 {
+    line-height: 1; /* Reduce el espacio entre líneas */
+}
+
+.texto_hatsu2 h2 {
+    font-size: 50px;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+    font-weight: bold; /* Negrita */
+}
+
+.texto_hatsu2 h1 {
+    font-size: 120px;
+    font-weight: bold;
+    margin: 0;
+    font-weight: bold; /* Negrita */
+}
+
+.imagen-item1_hatsu2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-item1_hatsu2 img {
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-item2_hatsu2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: span 2; /* Hace que ocupe 2 filas */
+}
+
+.imagen-item2_hatsu2 img {
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-item3_hatsu2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-item3_hatsu2 img {
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Líneas separadoras */
+.linea_hatsu2 {
+    position: absolute;
+    background-color: white;
+}
+
+.linea-horizontal1_hatsu2 {
+    width: 450px;
+    height: 2px;
+    top: 30%;
+    left: 0;
+}
+
+.linea-vertical1_hatsu2 {
+    width: 2px;
+    height: 350px;
+    bottom: 1px;
+    left: 18%;
+}
+
+.linea-horizontal2_hatsu2 {
+    width: 450px;
+    height: 2px;
+    top: 85%;
+    right: 0;         /* La coloca al extremo derecho */
+}
+
+.linea-vertical2_hatsu2 {
+    width: 2px;
+    height: 170px;
+    top: 0;
+    left: 83%;
+}
+
+/*__________________________Parte rosa 2__________________________*/
+
+
+/* Contenedor principal */
+.contenedor2_hatsu2 {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F7A9B3; /* Color de fondo */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columnas */
+    gap: 30px; /* Espacio entre elementos */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 60px 30px;
+}
+
+/* Estilos del texto */
+.texto_hatsu2 {
+    flex: 1;
+    text-align: right;
+    color: #FFF7E4;
+    padding-right: 10px;
+    padding-left: 70px;
+    padding-bottom: 100px;
+}
+
+.texto_hatsu2 h1 {
+    font-size: 105px;
+    font-weight: bold;
+    margin: 0;
+    text-align: right;
+    padding-bottom: 50px;
+}
+
+.texto_hatsu2 p {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+
+/* Estilos del formulario */
+.formulario_hatsu2 {
+    flex: 1;
+}
+
+.formulario_hatsu2 form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario_hatsu2 label {
+    font-weight: bold;
+    font-size: 32px;
+    color: black;
+}
+
+.formulario_hatsu2 input,
+.formulario_hatsu2 textarea {
+    padding: 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #FFF7E4;
+    font-size: 16px;
+}
+
+
+/* Botón de enviar */
+button {
+    background-color: #B276F3;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    width: 40%;
+    align-self: center;
+    margin-top: 30px; /* Ajusta el valor según lo necesites */
+}
+
+.linea-vertical3_hatsu2 {
+    width: 2px;
+    height: 700px;
+    top: 0;
+    left: 50%;
+}
+
+/* Media Queries */
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    .contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+    
+    .bmenu {
+        flex-direction: row;
+        gap: 30px;
+        padding-right: 90px;
+    }
+    
+    .logo {
+        width: 130px;
+        margin-left: 10px;
+    }
+    
+    .tienda {
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    .h1_hatsu2 {
+        font-size: 90px;
+    }
+    
+    .contenido_hatsu2 {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contacto_hatsu2 {
+        margin: auto;
+        color: #FFF7E4;
+        background-color: #FC95A8;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .h1_hatsu2 {
+        font-size: 120px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 15px 30px;
+        max-width: 90%;
+        margin: 10px auto;
+    }
+    
+    .linea_blanca_hatsu2 {
+        background-color: #fff;
+        width: 100vw;
+        height: 2px;
+    }
+    
+    .contenido_hatsu2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        width: 70%;
+        margin: 0 auto;
+        padding: 30px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .texto_hatsu2 {
+        max-width: 500px;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: right;
+    }
+    
+    .redes_hatsu2 {
+        margin-top: 15px;
+        text-align: right;
+    }
+    
+    .redes_hatsu2 img {
+        width: 60px;
+        margin: 0 10px;
+    }
+    
+    .imagen_hatsu2 {
+        margin-top: 20px;
+    }
+    
+    .imagen_hatsu2 img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+    }
+    
+    /* Contenedor Responsive */
+    .contenedor_hatsu2 {
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #BD86D7;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+    
+    .texto_hatsu2 h2 {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .texto_hatsu2 h1 {
+        font-size: 100px;
+        font-weight: bold;
+    }
+    
+    .imagen-item1_hatsu2,
+    .imagen-item2_hatsu2,
+    .imagen-item3_hatsu2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imagen-item1_hatsu2 img,
+    .imagen-item2_hatsu2 img,
+    .imagen-item3_hatsu2 img {
+        width: 50%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+/* Media Queries para responsive design */
+
+    .h1_hatsu2 {
+        font-size: 80px;
+    }
+    .contenido_hatsu2 {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .texto_hatsu2 {
+        text-align: center;
+        max-width: 100%;
+    }
+    .redes_hatsu2 {
+        text-align: center;
+    }
+    .contenedor_hatsu2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .linea_hatsu2 {
+        display: none;
+    }
+
+    .contenedor2_hatsu2 {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        text-align: center;
+    }
+
+    .texto_hatsu2 {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .texto_hatsu2 h1 {
+        font-size: 80px;
+    }
+
+    .texto_hatsu2 p {
+        font-size: 28px;
+    }
+
+    .formulario_hatsu2 {
+        text-align: center;
+    }
+
+    button {
+        width: 60%;
+    }
+}
+
+
+/* Smartphones */
+@media screen and (max-width: 767px){
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 100px;
+        align-items: left;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bmenu {
+        display: none; /* Oculto en móviles */
+    }
+
+    .tienda {
+        margin-left: 0;
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .h1_hatsu2 {
+        font-size: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 15px 30px;
+        width: 200px;
+        margin: 10px auto; /* Centrar en la página */
+    }
+    
+    .contenido_hatsu2 {
+        width: 80%;
+        padding: 10px;
+    }
+    
+    .redes_hatsu2 img {
+        width: 50px;
+    }
+
+    .contacto_hatsu2 {
+        margin: auto;
+        color: #FFF7E4;
+        background-color: #FC95A8;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .h1_hatsu2 {
+        font-size: 120px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 15px 30px;
+        max-width: 90%;
+        margin: 10px auto;
+    }
+    
+    .linea_blanca_hatsu2 {
+        background-color: #fff;
+        width: 100vw;
+        height: 2px;
+    }
+    
+    .contenido_hatsu2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        width: 70%;
+        margin: 0 auto;
+        padding: 30px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .texto_hatsu2 {
+        max-width: 500px;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: right;
+    }
+    
+    .redes_hatsu2 {
+        margin-top: 15px;
+        text-align: right;
+    }
+    
+    .redes_hatsu2 img {
+        width: 60px;
+        margin: 0 10px;
+    }
+    
+    .imagen_hatsu2 {
+        margin-top: 20px;
+    }
+    
+    .imagen_hatsu2 img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+    }
+
+    .linea_hatsu2 {
+        display: none;
+    }
+    
+    /* Contenedor Responsive */
+    .contenedor_hatsu2 {
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #BD86D7;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+    
+    .texto_hatsu2 h2 {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .texto_hatsu2 h1 {
+        font-size: 120px;
+        font-weight: bold;
+    }
+    
+    .imagen-item1_hatsu2,
+    .imagen-item2_hatsu2,
+    .imagen-item3_hatsu2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imagen-item1_hatsu2 img,
+    .imagen-item2_hatsu2 img,
+    .imagen-item3_hatsu2 img {
+        width: 80%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .h1_hatsu2 {
+        font-size: 60px;
+    }
+    .contenido_hatsu2 {
+        grid-template-columns: 1fr; /* Una sola columna */
+        width: 90%;
+        padding: 20px;
+    }
+
+    .texto_hatsu2 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .redes_hatsu2 {
+        text-align: center;
+    }
+
+    .redes_hatsu2 img {
+        width: 50px;
+    }
+
+    .imagen_hatsu2 img {
+        max-width: 300px;
+    }
+    .contenedor_hatsu2 {
+        grid-template-columns: 1fr;
+    }
+    .texto_hatsu2 h1 {
+        font-size: 80px;
+    }
+
+    .contenedor2_hatsu2 {
+        grid-template-columns: 1fr;
+        padding: 30px 15px;
+    }
+
+    .texto_hatsu2 {
+        padding: 10px;
+    }
+
+    .texto_hatsu2 h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .texto_hatsu2 p {
+        font-size: 20px;
+    }
+
+    .formulario_hatsu2 label {
+        font-size: 24px;
+    }
+
+    .formulario_hatsu2 input,
+    .formulario_hatsu2 textarea {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 80%;
+        font-size: 20px;
+    }
+
+}
+/* Hatsu_2_fin*/
+
+
+

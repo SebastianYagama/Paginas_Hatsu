@@ -70,33 +70,35 @@ img {
   height: auto;
 }
 
-.grid {
+span{
+  margin: 0 1rem;
+}
+
+.grid_hatsu1 {
   display: grid;
 }
 
-.header {
+.header_hatsu1 {
   width: 100%;
   height: var(--header-height);
-
   z-index: var(--z-fixed);
   background-color: var(--body-color);
-  padding: 3rem 5rem;
+  padding: 0 5rem;
 }
 
-.nav {
+.nav_hatsu1 {
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
-.nav__list {
+.nav__list_hatsu1 {
   grid-template-columns: repeat(7, 1fr);
   gap: 4rem;
 }
 
-.nav__link {
+.nav__link_hatsu1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,32 +107,26 @@ img {
   color: var(--font-color);
 }
 
-
-.shop-button {
-  background-color: #c89de6; 
+.shop-button_hatsu1 {
+  background-color: #c89de6;
   border-radius: 20px;
   text-decoration: none;
-  font-weight: bold; 
+  font-weight: bold;
   color: #FFF;
 }
 
-
-.main {
+.main_hatsu_1 {
   margin-top: 5.75rem;
 }
-.main__hero {
+.main__hero_hatsu1 {
   padding: 0 5rem;
 }
 
-.hero__title-container{
+.hero__title-container_hatsu1 {
   width: 100%;
 }
 
-span{
-  margin: 0 1rem;
-}
-
-.hero-icon{
+.hero-icon_hatsu1 {
   border-radius: 50%;
   background: #000;
   padding: .35rem;
@@ -138,7 +134,7 @@ span{
   color: var(--body-color);
 }
 
-.hero__title {
+.hero__title_hatsu1 {
   font-size: 9.5rem;
   width: 100%;
   display: block;
@@ -146,18 +142,19 @@ span{
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.main__option {
+.main__option_hatsu1 {
   padding: 0 5rem;
   display: flex;
   justify-content: end;
   align-items: center;
 }
 
-.option__text {
+.option__text_hatsu1 {
   font-size: 2.5rem;
   font-weight: var(--font-medium);
 }
-.container__image{
+
+.container__image_hatsu1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,75 +162,74 @@ span{
   margin-bottom: var(--mb-2-5);
 }
 
-.container__image img {
+.container__image_hatsu1 img {
   object-fit: cover;
   padding: 0 5rem;
 }
 
-.container {
+.container_hatsu1 {
   margin: 5rem 0;
 }
 
-.products__title{
+.products__title_hatsu1 {
   padding: 1.5rem 5rem;
   background: var(--product-bg-color);
   font-weight: var(--font-small);
 }
 
-.products_text_title {
+.products_text_title_hatsu1 {
   font-size: var(--big-font-size);
   color: var(--body-color);
 }
 
-.item {
+.item_hatsu1 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.products{
+.products_hatsu1 {
   grid-template-columns: repeat(5, 1fr);
 }
 
-.category {
+.category_hatsu1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.primary-color{
+.primary-color_hatsu1 {
   color: var(--product-bg-color);
 }
 
-.secondary-color{
+.secondary-color_hatsu1 {
   background: var(--product-bg-color);
   color: var(--body-color);
 }
 
-.product_text {
+.product_text_hatsu1 {
   text-align: center;
 }
 
-.text_category {
+.text_category_hatsu1 {
   transform: rotate(-90deg);
   white-space: nowrap;
   font-size: 2rem;
   margin-top: 50%;
-
 }
 
-.product_image{
+.product_image_hatsu1 {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
-.product_item{
+.product_item_hatsu1 {
   padding: 4rem 0;
 }
 
-.product-icon{
+.product-icon_hatsu1 {
   border-radius: 50%;
   font-size: 2.5rem;
   color: var(--body-color);
@@ -241,23 +237,23 @@ span{
   padding: .25rem;
 }
 
-.footer{
+.footer_hatsu1 {
   grid-template-columns: 1.75fr 1fr 1fr;
   padding: 0 2rem;
 }
 
-.footer__title {
+.footer__title_hatsu1 {
   font-size: var(--h1-font-size);
 }
 
-.footer__email {
+.footer__email_hatsu1 {
   display: flex;
   flex-direction: column;
   gap: .5rem;
   width: 300px;
 }
 
-.form {
+.form_hatsu1 {
   width: 300px;
   margin-top: var(--mb-0-75);
   padding: 10px;
@@ -268,7 +264,7 @@ span{
   outline: none;
 }
 
-.button {
+.button_hatsu1 {
   padding: .75rem;
   border-radius: 5%;
   background: #EC96AD;
@@ -276,7 +272,69 @@ span{
   border: none;
 }
 
-/* ======== TABLETS (hasta 768px) ======== */
+@media screen and (max-width: 1024px) {
+  :root {
+    --big-font-size: 2.5rem;
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.125rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .875rem;
+    --small-font-size: .875rem;
+  }
+
+  .header_hatsu1 {
+    padding: 0 3rem;
+  }
+  
+  .grid_hatsu1 {
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .category_hatsu1 {
+    flex-direction: row-reverse;
+    justify-content: start;
+    padding: 0 2rem;
+    margin-top: 2rem;
+    grid-column: span 2;
+  }
+
+  .nav__list_hatsu1 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+
+  .main__hero_hatsu1,
+  .main__option_hatsu1,
+  .container__image_hatsu1 {
+    padding: 0 3rem;
+  }
+
+  .hero__title_hatsu1 {
+    margin-top: 3rem;
+    font-size: 5.5rem;
+  }
+
+  .products_hatsu1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .text_category_hatsu1 {
+    transform: rotate(0);
+    font-size: 1.75rem;
+    margin-top: 0;
+  }
+
+  .footer_hatsu1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+}
+
+
+
 @media screen and (max-width: 768px) {
   :root {
     --big-font-size: 2.5rem;
@@ -287,52 +345,52 @@ span{
     --small-font-size: .875rem;
   }
 
-  .header {
-    padding: 2rem 3rem;
+  .header_hatsu1 {
+    padding: 0 3rem;
   }
   
-  .grid {
+  .grid_hatsu1 {
     grid-template-rows: auto 1fr;
     grid-template-columns: 1fr 1fr;
   }
 
-  .category {
+  .category_hatsu1 {
     flex-direction: row-reverse;
     justify-content: start;
     padding: 0 2rem;
     margin-top: 2rem;
     grid-column: span 2;
-
   }
 
-  .nav__list {
+  .nav__list_hatsu1 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 2rem;
   }
 
-  .main__hero,
-  .main__option,
-  .container__image {
+  .main__hero_hatsu1,
+  .main__option_hatsu1,
+  .container__image_hatsu1 {
     padding: 0 3rem;
   }
 
-  .hero__title {
-    font-size: 8rem;
+  .hero__title_hatsu1 {
+    margin-top: 3rem;
+    font-size: 5.5rem;
   }
 
-  .products {
+  .products_hatsu1 {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
 
-  .text_category {
+  .text_category_hatsu1 {
     transform: rotate(0);
     font-size: 1.75rem;
     margin-top: 0;
   }
 
-  .footer {
+  .footer_hatsu1 {
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
   }
@@ -340,74 +398,72 @@ span{
 
 /* ======== MÓVILES (hasta 480px) ======== */
 @media screen and (max-width: 480px) {
-  .header {
+  .header_hatsu1 {
     padding: 1rem 2rem;
   }
 
-  .nav {
+  .nav_hatsu1 {
     display: none;
-
   }
 
-  .category {
+  .category_hatsu1 {
     flex-direction: row-reverse;
     justify-content: start;
     padding: 0 2rem;
     margin-top: 2rem;
     grid-column: span 2;
-
   }
   
-  .text_category {
+  .text_category_hatsu1 {
     display: flex;
     align-items: center;
     margin-top: 0;
   }
 
-  .grid {
+  .grid_hatsu1 {
     grid-template-rows: auto 1fr;
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
 
-  .nav__list {
+  .nav__list_hatsu1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 
-  .main {
+  .main_hatsu1 {
     margin-top: 3rem;
   }
 
-  .main__hero,
-  .main__option,
-  .container__image {
+  .main__hero_hatsu1,
+  .main__option_hatsu1,
+  .container__image_hatsu1 {
     padding: 0 1.5rem;
   }
 
-  .hero__title {
+  .hero__title_hatsu1 {
     font-size: 5rem;
     text-align: center;
   }
 
-  .text_category {
+  .text_category_hatsu1 {
     transform: rotate(0);
   }
   
-  .products {
+  .products_hatsu1 {
     gap: 1rem;
   }
 
-  .product_item {
+  .product_item_hatsu1 {
     padding: 2rem 0;
   }
 
-  .footer__email {
+  .footer__email_hatsu1 {
     justify-content: center;
   }
 
-  .footer {
+  .footer_hatsu1 {
     grid-template-columns: 1fr;
     grid-gap: 3rem;
     padding: 1rem;
